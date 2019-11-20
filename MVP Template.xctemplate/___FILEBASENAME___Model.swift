@@ -3,11 +3,11 @@
 //  ___PROJECTNAME___
 //
 //  Created ___FULLUSERNAME___ on ___DATE___.
-//  Copyright © ___YEAR___ Ibtikar Technologies, Co. Ltd. All rights reserved.
+//  ___COPYRIGHT___
 //
 
 import Foundation
 
-class ___VARIABLE_productName:identifier___Model: BaseModel {
+class ___VARIABLE_productName:identifier___Model: BaseModel, ___VARIABLE_productName:identifier___ModelProtocol {
 
 }

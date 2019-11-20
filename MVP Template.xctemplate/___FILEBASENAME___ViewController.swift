@@ -3,13 +3,19 @@
 //  ___PROJECTNAME___
 //
 //  Created ___FULLUSERNAME___ on ___DATE___.
-//  Copyright © ___YEAR___ Ibtikar Technologies, Co. Ltd. All rights reserved.
+//  ___COPYRIGHT___
 //
 
 import Foundation
 import UIKit
 
-class ___VARIABLE_productName:identifier___ViewController<P: ___VARIABLE_productName:identifier___PresenterProtocol>: BaseViewController<P> {
+class ___VARIABLE_productName:identifier___ViewController: BaseViewController {
+    
+    // MARK: - Presenter
+    private weak var presenter: ___VARIABLE_productName:identifier___PresenterProtocol?
+    func setPresenter(presenter: ___VARIABLE_productName:identifier___PresenterProtocol) {
+        self.presenter = presenter
+    }
     
     // MARK: - Public Variables
 
@@ -20,6 +26,7 @@ class ___VARIABLE_productName:identifier___ViewController<P: ___VARIABLE_product
     // MARK: - IBOutlets
 
     // MARK: - Custom Setter
+
 
     // MARK: - View controller lifecycle methods
 

@@ -3,20 +3,21 @@
 //  ___PROJECTNAME___
 //
 //  Created ___FULLUSERNAME___ on ___DATE___.
-//  Copyright © ___YEAR___ Ibtikar Technologies, Co. Ltd. All rights reserved.
+//  ___COPYRIGHT___
 //
 
 import Foundation
 
-class BasePresenter: NSObject, BasePresenterProtocol {
+class BasePresenter<View:BaseViewProtocol,Model:BaseModelProtocol>: NSObject, BasePresenterProtocol {
 
-    var view: BaseViewProtocol?
-    var model: BaseModelProtocol?
-
+    private var view: View?
+    private var model: Model?
+    
     private override init() {
-
+        
     }
-    init(view: BaseViewProtocol, model: BaseModelProtocol ) {
+    
+    init(view: View, model: Model ) {
         self.view = view
         self.model = model
     }

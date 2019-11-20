@@ -3,17 +3,17 @@
 //  ___PROJECTNAME___
 //
 //  Created ___FULLUSERNAME___ on ___DATE___.
-//  Copyright © ___YEAR___ Ibtikar Technologies, Co. Ltd. All rights reserved.
+//  ___COPYRIGHT___
 //
 
 import Foundation
 import UIKit
 
-class BaseViewController<P: BasePresenterProtocol>: UIViewController, BaseViewProtocol {
+class BaseViewController: UIViewController, BaseViewProtocol {
 
-    private(set) weak var presenter: P?
-
-    func setPresenter(presenter: P) {
+    private weak var presenter: BasePresenterProtocol?
+    
+    func setPresenter(presenter: BasePresenterProtocol) {
         self.presenter = presenter
     }
     
