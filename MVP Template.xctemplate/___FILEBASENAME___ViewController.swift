@@ -12,7 +12,7 @@ import UIKit
 class ___VARIABLE_productName:identifier___ViewController: BaseViewController {
     
     // MARK: - Presenter
-    private weak var presenter: ___VARIABLE_productName:identifier___PresenterProtocol?
+    private var presenter: ___VARIABLE_productName:identifier___PresenterProtocol?
     func setPresenter(presenter: ___VARIABLE_productName:identifier___PresenterProtocol) {
         self.presenter = presenter
     }
