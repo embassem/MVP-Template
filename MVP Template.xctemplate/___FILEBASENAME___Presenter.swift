@@ -14,5 +14,10 @@ BasePresenter<View, Model>, ___VARIABLE_productName:identifier___PresenterProtoc
     private var view: View?
     private var model: Model?
 
+    override init(view: View, model: Model) {
+        super.init(view: view, model: model)
+        self.view = view
+        self.model = model
+    }
 
 }
