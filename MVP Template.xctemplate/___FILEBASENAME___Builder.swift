@@ -9,7 +9,7 @@
 import Foundation
 import  UIKit
 
-class ___VARIABLE_productName:identifier___Module {
+class ___VARIABLE_productName:identifier___Builder {
 
     class func createModule() -> UIViewController {
 
